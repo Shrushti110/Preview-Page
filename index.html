@@ -10,17 +10,26 @@
     <img src="1.png" id="main-pro-img"/>
 
     <div class="img-container">
-        <img src="1.png" class="product-img" onclick="changeImage(1)"/>
-        <img src="2.png" class="product-img" onclick="changeImage(2)"/>
-        <img src="3.png" class="product-img" onclick="changeImage(3)"/>
-        <img src="4.png" class="product-img" onclick="changeImage(4)"/>
-        <img src="5.png" class="product-img" onclick="changeImage(5)"/>
+        <img src="1.png" class="product-img" onclick="changeImage('1.png')"/>
+        <img src="2.png" class="product-img" onclick="changeImage('2.png')"/>
+        <img src="3.png" class="product-img" onclick="changeImage('3.png')"/>
+        <img src="4.png" class="product-img" onclick="changeImage('4.png')"/>
+        <img src="5.png" class="product-img" onclick="changeImage('5.png')"/>
     </div>
+    <div class="info">
+    <p>
+        Samsung Galaxy Book3 Core i5 13th Gen 1335U - (8 GB/512 GB SSD/Windows 11 Home) 
+        Galaxy Book3 Thin and Light Laptop (15.6 Inch, Silver, 1.58 Kg, with MS Office)
+    </p>
+    <h2><span style="color: brown;">Discount</span>:38% , <span style="color: rgb(80, 155, 80);">Price</span>:₹58,600/-</h2>
+    <p>M.R.P.:<del>₹94,000</del></p>
+</div>
     <script>
-        function changeImage(num){
+        function changeImage(imageName){
              const mainImage = document.getElementById("main-pro-img")
+             mainImage.src = imageName;
 
-            if(num==1){
+            /*if(num==1){
                 mainImage.src="1.png";
             }
             else if(num==2){
@@ -34,7 +43,7 @@
             }
             else if(num==5){
                 mainImage.src="5.png";
-            }
+            }*/
         }
     </script>
 </body>
